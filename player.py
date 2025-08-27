@@ -26,6 +26,7 @@ class Player(CircleShape):
         self.shot_timer -= dt
         keys = pygame.key.get_pressed()
 
+        # Check for movement and shooting inputs
         if keys[pygame.K_w]:
             self.move(dt)
         if keys[pygame.K_s]:

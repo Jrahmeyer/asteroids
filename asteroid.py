@@ -21,6 +21,7 @@ class Asteroid(CircleShape):
 
         random_angle = random.uniform(20, 50)
 
+        # create two smaller asteroids
         a = self.velocity.rotate(random_angle)
         b = self.velocity.rotate(-random_angle)
 
